@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect, ChangeEvent } from 'react';
+import React, { useCallback, useState, useEffect} from 'react';
 import clsx from 'clsx';
 
 export default function Checkbox({
