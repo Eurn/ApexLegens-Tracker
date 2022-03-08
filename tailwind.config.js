@@ -2,6 +2,7 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
 	content: [
 		'./src/**/*.{js,ts,jsx,tsx}',
+		'./src/pages/**/*.{js,ts,jsx,tsx}',
 		'./src/components/**/*.{js,ts,jsx,tsx}',
 	],
 
@@ -18,12 +19,13 @@ module.exports = {
 		},
 
 		colors: {
+			black:'#000000',
+			redBrown: '#6C2222',
 			green: '#3F9F98',
 			blue: '#587CBF',
 			darkBlue: '#3B5CAB',
 			selectedBlue: '#284984',
 			white: '#FFFFFF',
-			darkGray: '#4A4C54',
 			gray: '#616A7E',
 			middleGray: '#cdd0d7',
 			lightGray: '#F7F8FA',
@@ -37,14 +39,8 @@ module.exports = {
 			disabledGray: '#a4a4b0',
 			grayBorder: '#CDD0D7',
 			stepperGray: '#A7AEBE',
-			bodyColor: '#F4F6FC',
-			captionGray: '#616a7f',
 			backgroundWelcomePage: '#4d74cb',
-			symptomsZone: '#f6f8fa',
-			// border
 			borderGray: '#ebebeb',
-			// liserer
-			edgingGray: '#ebeef5',
 			// inputField
 			crossInputBg: '#ebedf3',
 			crossInputSVG: '#616B7D',
