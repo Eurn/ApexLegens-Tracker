@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Button from "./Button";
 
 function Character(props) {
-  const localFavorites = JSON.parse(localStorage.getItem("favorites")) ?? [];
-  const [favorites, setFavorites] = useState(localFavorites);
-  useEffect(() => {
-    localStorage.setItem("favorites", JSON.stringify(favorites));
-  }, [favorites]);
+  //   const localFavorites = JSON.parse(localStorage.getItem("favorites")) ?? [];
+  //   const [favorites, setFavorites] = useState(localFavorites);
+  //   useEffect(() => {
+  //     localStorage.setItem("favorites", JSON.stringify(favorites));
+  //   }, [favorites]);
 
   const addFav = (character) => {
     // setFavorites(favorites.concat([character]));
