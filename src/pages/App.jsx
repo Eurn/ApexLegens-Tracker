@@ -33,6 +33,47 @@ function App() {
       alert("Le personnage n'existe pas");
     }
   };
+  //   const RandomSubmit = async () => {
+  //     var Uuid;
+  //     var rand = Math.floor(Math.random() * (17 - 0)) + 0;
+  //     console.log(rand);
+  //     const list = [
+  //       "Breach",
+  //       "Sova",
+  //       "Raze",
+  //       "Chamber",
+  //       "KayO",
+  //       "Skye",
+  //       "Cypher",
+  //       "Killjoy",
+  //       "Viper",
+  //       "Phoenix",
+  //       "Astra",
+  //       "Brimstone",
+  //       "Neon",
+  //       "Yoru",
+  //       "Sage",
+  //       "Reyna",
+  //       "Omen",
+  //       "Jett",
+  //     ];
+  //     for (const [key, value] of Object.entries(AllCharacter)) {
+  //       Uuid = list[rand];
+  //       try {
+  //         const response = await fetch(
+  //           `https://valorant-api.com/v1/agents/${Uuid}`,
+  //           {
+  //             method: "GET",
+  //           }
+  //         );
+  //         setcharacter(await response.json());
+  //       } catch (e) {
+  //         console.error("Error", e);
+  //         console.log(e.status ?? 500);
+  //       }
+  //       break;
+  //     }
+  //   };
 
   return (
     <div className="flex mt-3 w-full h-full ">
@@ -68,10 +109,11 @@ function App() {
                 fullWidth={true}
               />
             </div>
-            <div className="mb-2">
+            <div className="mb-2 flex justify-between">
               <Button variant="contained" onClick={handleSubmit}>
                 Search
               </Button>
+              <Button variant="contained">Random character</Button>
             </div>
           </div>
         </div>

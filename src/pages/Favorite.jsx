@@ -1,12 +1,15 @@
 import Checkbox from "../components/Checkbox";
+// import { useState } from "react";
 
 const Favorite = () => {
+  //   const favorites = JSON.parse(localStorage.getItem("favorites")) ?? [];
+  //   const [fav, setfav] = useState(favorites);
   return (
     <div className="favorite">
       <div className="flex mt-3 w-full h-full ">
         <div className=" rounded  flex flex-col justify-center items-center bg-backgroundWelcomePage">
           <h1 className="text-xl font-roboto text-white text-center mb-12 px-12">
-            SAlut
+            {/* <img className="rounded" src={banner} alt="profile pic" /> */}
           </h1>
         </div>
         <div className="bg-white   flex  flex-col  rounded w-full p-4">

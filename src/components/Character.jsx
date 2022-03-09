@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { useState, useEffect } from "react";
 import Button from "./Button";
 
 function Character(props) {
@@ -9,7 +9,7 @@ function Character(props) {
   //   }, [favorites]);
 
   const addFav = (character) => {
-    // setFavorites(favorites.concat([character]));
+    // setFavorites(favorites.push(character));
   };
   const charac = props.value;
   if (Object.keys(charac).length !== 0) {
